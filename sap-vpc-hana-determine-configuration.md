@@ -43,7 +43,9 @@ To change these settings, complete these steps:
 
 2. Add lines that resolve to the external IP address of your virtual server. In our example, the hostname resolves to `10.242.128.8`, the private IP displayed in Figure 6. In this example, we append a sample default domain. You should adapt this example to your specific environment.
 
-Following are samples of the **`/etc/hosts`** file, one for IPv4 and one for IPv6. Take care that both instances of references of localhost to the hostname, IPv4 and IPv6 are in comments (or deleted).
+Following are samples of the **`/etc/hosts`** file, one for IPv4 and one for IPv6.
+
+For IPv4, make sure that `127.0.0.1 sap-hana-vsi sap-hana-vsi` is commented out or deleted. For IPv6, make sure that `#::1 sap-hana-vsi sap-hana-vsi` is commented out or deleted.
 
 ```
 # The following lines are desirable for IPv4 capable hosts
