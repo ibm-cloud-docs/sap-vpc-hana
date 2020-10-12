@@ -34,7 +34,7 @@ In addition, you must create an **SSH key** that you add to the server instance 
 {:important}
 
 ## Ordering your virtual server
-{: order-virtual-server-vpc}
+{: #order-virtual-server-vpc}
 
 Use the following steps to order your virtual server and necessary components. For more information about creating a virtual server, see [Creating virtual server instances by using the IBM Cloud console](/docs/vpc?topic=vpc-creating-virtual-servers).
 
