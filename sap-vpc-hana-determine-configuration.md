@@ -213,7 +213,7 @@ The following entries to `/etc/fstab` will allow mounting the file systems after
 ## High-availability configuration and support
 {: #ha}
 
-The {{site.data.keyword.cloud_notm}} environment does not support any pre-configured high availability (HA) scenarios. However, it does let you implement HA solutions for SAP HANA through Red Hat Enterprise Linux HA extensions, such as an on-premises case.
+The {{site.data.keyword.cloud_notm}} environment does not support any pre-configured high availability (HA) scenarios. However, you can implement HA solutions for SAP HANA through Red Hat Enterprise Linux or SUSE Linux Enterprise HA extensions, just as you would do for an on-premises implementation.
 
 SAP HANA system replication can be configured with an automated fail-over from one server to a replica. Follow the SAP documentation on system replication to determine the replication mode that best fits your application scenario and your level of disaster resilience. Depending on the replication mode, different network KPIs need to be fulfilled. Consult SAP recommendations on the network throughput and latency to determine the required throughput and maximum latency for your operation mode of choice. The {{site.data.keyword.cloud_notm}} network topology should be able to serve all the required configurations. Contact {{site.data.keyword.cloud_notm}} Support to determine the optimal setup for your scenario if you're not sure or if you want your disaster recovery site in a different data center to achieve maximum disaster resilience.
 
@@ -226,6 +226,7 @@ For more information on system replication, and network throughput and latency, 
 
 For more information on setting up the HA cluster extensions for your Linux operating system, see
 
+  * [SAP HANA System Replication Scale-Up - Performance Optimized Scenario](https://documentation.suse.com/sbp/all/single-html/SLES4SAP-hana-sr-guide-PerfOpt-12){: external}
   * [Automated SAP HANA System Replication with Pacemaker on RHEL Setup Guide](https://access.redhat.com/articles/1466063){: external}
 
 ### Network considerations

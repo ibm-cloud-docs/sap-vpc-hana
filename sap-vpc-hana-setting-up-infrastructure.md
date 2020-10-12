@@ -49,7 +49,7 @@ Use the following steps to order your virtual server and necessary components. F
    {: note}
 
 1. Select the same **Location** in which you created your subnets. The location consists of a region and zone.
-1. Select **Catalog Image** > **`ibm-redhat-7-6-amd64-sap-hana-1`** as the OS image.
+1. Select **Catalog Image** > **`ibm-redhat-7-6-amd64-sap-hana-1`** as the OS image. You can also choose one of the SUSE images: **ibm-sles-15-1-amd64-sap-hana-1** or **ibm-sles-12-4-amd64-sap-hana-1**.
 1. Select a **Profile** based on the guidance detailed in [Choosing an SAP-certified virtual server](/docs/sap-vpc-hana?topic=sap-vpc-hana-size_the_server#choose_server), which lists the profiles that are certified for SAP HANA.
 1. Select the **SSH key** you want to add to the virtual server. For this step, you can create a new SSH key.
 1. Click **New volume** for **Data volumes**. Data volumes are required and must meet special KPI needs that are defined by SAP and are mandatory. See [Storage configuration](/docs/sap-vpc-hana?topic=sap-vpc-hana-determine_configuration#storage_config) to learn these special needs and how you should configure the data volumes. You can enable **Auto Delete** to automatically delete the data volume if the virtual server is deleted. However, this is not recommended. Attach the appropriate data volumes to your virtual server.
@@ -65,7 +65,7 @@ Table 1 is a summary of the fields and values that are used to provision {{site.
 | Virtual private cloud | Specify the VPC where you want to create your virtual server. |
 | Resource group | Use resource groups to organize your account resources for access control and billing purposes. |
 | Location | Locations are composed of regions (specific geographic areas) and zones (fault tolerant data centers within a region). Select the location where you want to create your virtual server. |
-| Image | Select Catalog images > **`ibm-redhat-7-6-amd64-sap-hana-1`** for SAP HANA workloads. |
+| Image | Select **Catalog Image** > **`ibm-redhat-7-6-amd64-sap-hana-1`** for SAP HANA workloads. You can also choose one of the SUSE images: **ibm-sles-15-1-amd64-sap-hana-1** or **ibm-sles-12-4-amd64-sap-hana-1**. |
 | Profile |  Select one of the profiles outlined in [Choosing an IBM Cloud for Virtual Servers for Virtual Private Cloud](/docs/sap-vpc-hana?topic=sap-vpc-hana-size_the_server#choose_server). |
 | SSH Key | You must select an existing SSH key or upload a new SSH key before you can create the instance. SSH keys are used to securely connect to a running instance. |
 | | **Note:** Alpha-numeric combinations are limited to 100 characters. For more information, see [SSH keys](/docs/vpc?topic=vpc-ssh-keys). |
@@ -74,7 +74,6 @@ Table 1 is a summary of the fields and values that are used to provision {{site.
 | Data volume  | Attach data volumes to your virtual server depending on your SAP HANA virtual server profile. |
 | Network interfaces | Assign networking options to connect into the IBM Cloud VPC. You can create and assign up to five network interfaces to each instance. |
 {: caption="Table 1. Instance provisioning selections" caption-side="top"}
-
 
 ## Adding {{site.data.keyword.block_storage_is_short}}
 {: #adding-vpc-block-storage-vpc}
